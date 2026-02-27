@@ -1,0 +1,17 @@
+/*Criar um algoritmo que entre com o valor de x, calcule e imprima o valor de f(x).*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	float valX, funcao;
+	
+	printf("Informe o valor de X: ");
+	scanf("%f", &valX);
+	
+	funcao = 8/(2-valX);
+	
+	printf("Resultado da Funcao(%.2f): %.2f\n", valX, funcao);
+
+	return 0;
+}
