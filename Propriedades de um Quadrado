@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	
+	float lado, area, perimetro, diagonal;
+	
+	printf("Informa o tamanho de qualquer lado da placa: ");
+	scanf("%f", &lado);
+	
+	perimetro = 4*lado;
+	area = pow(lado, 2);
+	diagonal = lado*sqrt(2);
+	
+	printf("\n\tESPECIFICACOES PARA O CLIENTE:\n");
+	printf("O tamanho total das quatros bordas da: %.2f\n", perimetro);
+	printf("A area total coberta por verniz serah de: %.2f\n", area);
+	printf("O comprimento total de canto a canto resulta em: %.2f\n", diagonal);
+	
+	return 0;
+}
