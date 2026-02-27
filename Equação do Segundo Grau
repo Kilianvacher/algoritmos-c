@@ -1,0 +1,26 @@
+/*Efetuar a leitura de três valores (A, B e C) e efetuar o cálculo da equação de
+segundo grau Ax2+Bx+C, apresentando as duas raízes, se para os valores informados for possível efetuar o referido cálculo.*/
+
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	float a, b, c;
+	
+	printf("Informe o valor de a: ");
+	scanf("%f", &a);
+	printf("Informe o valor de b: ");
+	scanf("%f", &b);
+	printf("Informe o valor de a: ");
+	scanf("%f", &c);
+	
+	float raiz1, raiz2;
+	
+	raiz1 = (-b+sqrt(pow(b,2)-4*a*c))/2*a;
+	raiz2 = (-b-sqrt(pow(b,2)-4*a*c))/2*a;
+	
+	printf("Valor da primeira raiz: %f\n", raiz1);
+	printf("Valor da segunda raiz: %f", raiz2);
+	
+	return 0;
+}
