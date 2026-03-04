@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+int main(){
+	
+	float x1, y1, z1, x2, y2, z2;
+	float raio1, raio2;
+	
+	printf("Informe as cordenadas X,Y e Z da primeira Esfera: ");
+	scanf("%f %f %f", &x1, &y1, &z1);
+	printf("Informe as cordenadas X,Y e Z da segunda Esfera: ");
+	scanf("%f %f %f", &x2, &y2, &z2);
+	printf("Agora, informe o raio da primeira esfera: ");
+	scanf("%f", &raio1);
+	printf("Agora, informe o raio da segunda esfera: ");
+	scanf("%f", &raio2);
+	
+	float distancia;
+	distancia = sqrt(pow(x2-x1,2)+pow(y2-y1,2)+(z2-z1,2));
+	
+	if(distancia>raio1+raio2)
+	{
+		printf("As duas esferas nao estao colidindo.");
+	} else
+	{
+		printf("As duas esferas estao colidindo.");
+	}
+	
+	return 0;
+}
