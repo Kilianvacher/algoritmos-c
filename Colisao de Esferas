@@ -19,10 +19,12 @@ int main(){
 	
 	if(distancia>raio1+raio2)
 	{
-		printf("As duas esferas nao estao colidindo.");
+		printf("\n\tRELATORIO DE COLISAO:\n");
+		printf("As duas esferas nao estao colidindo.\n");
 	} else
 	{
-		printf("As duas esferas estao colidindo.");
+		printf("\n\tRELATORIO DE COLISAO:\n");
+		printf("As duas esferas estao colidindo.\n");
 	}
 	
 	return 0;
