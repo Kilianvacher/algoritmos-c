@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main(){
+	
+	float numX, numY;
+	
+	printf("Digite a posicao do drone no eixo X: ");
+	scanf("%f", &numX);
+	printf("Digite a posicao do drone no eixo Y: ");
+	scanf("%f", &numY);
+	if((numX>=4 && numX<=14)&&(numY>= 4 && numY<=10))
+	{
+		printf("\n\tRELATORIO DE POSICAO:\n");
+		printf("O drone estah dentro da area ABCD\n");
+	} else if ((numX>=16 && numX<=25.6)&&(numY>=2 && numY<=11.6))
+	{
+		printf("\n\tRELATORIO DE POSICAO:\n");
+		printf("O drone estah dentro da area EFGH\n");	
+	} else
+	{
+		printf("\n\tRELATORIO DE POSICAO:\n");
+		printf("O drone estah fora da area\n");
+	}
+	
+	
+	
+	
+	
+	return 0;
+}
