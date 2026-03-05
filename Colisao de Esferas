@@ -1,31 +1,30 @@
 #include <stdio.h>
-#include <math.h>
+
 int main(){
 	
-	float x1, y1, z1, x2, y2, z2;
-	float raio1, raio2;
+	float numX, numY;
 	
-	printf("Informe as cordenadas X,Y e Z da primeira Esfera: ");
-	scanf("%f %f %f", &x1, &y1, &z1);
-	printf("Informe as cordenadas X,Y e Z da segunda Esfera: ");
-	scanf("%f %f %f", &x2, &y2, &z2);
-	printf("Agora, informe o raio da primeira esfera: ");
-	scanf("%f", &raio1);
-	printf("Agora, informe o raio da segunda esfera: ");
-	scanf("%f", &raio2);
-	
-	float distancia;
-	distancia = sqrt(pow(x2-x1,2)+pow(y2-y1,2)+(z2-z1,2));
-	
-	if(distancia>raio1+raio2)
+	printf("Digite a posicao do drone no eixo X: ");
+	scanf("%f", &numX);
+	printf("Digite a posicao do drone no eixo Y: ");
+	scanf("%f", &numY);
+	if((numX>=4 && numX<=14)&&(numY>= 4 && numY<=10))
 	{
-		printf("\n\tRELATORIO DE COLISAO:\n");
-		printf("As duas esferas nao estao colidindo.\n");
+		printf("\n\tRELATORIO DE POSICAO:\n");
+		printf("O drone estah dentro da area ABCD\n");
+	} else if ((numX>=16 && numX<=25.6)&&(numY>=2 && numY<=11.6))
+	{
+		printf("\n\tRELATORIO DE POSICAO:\n");
+		printf("O drone estah dentro da area EFGH\n");	
 	} else
 	{
-		printf("\n\tRELATORIO DE COLISAO:\n");
-		printf("As duas esferas estao colidindo.\n");
+		printf("\n\tRELATORIO DE POSICAO:\n");
+		printf("O drone estah fora da area\n");
 	}
+	
+	
+	
+	
 	
 	return 0;
 }
